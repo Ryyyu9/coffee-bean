@@ -1,69 +1,57 @@
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Raleway:wght@400;500;700&display=swap);
-
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     outline: none;
     border: none;
-
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
     font-family: 'Oswald', sans-serif;
 }
-p {
+p{
     font-family: 'Raleway', sans-serif;
 }
-
-.wrapper {
+.wrapper{
     width: 100%;
     margin: auto;
 }
-
 /* (1) Header Area */
-.nav {
+.nav{
     overflow: auto;
     width: 85%;
     margin: 1em auto;
 }
-
-.nav h1 {
+.nav h1{
     text-transform: uppercase;
     width: 50%;
     float: left;
 }
-
-.nav h1 a {
+.nav h1 a{
     font-family: 'Oswald', sans-serif;
-    color: #96746b;
+    color: #96746B;
     text-decoration: none;
 }
-
-.nav ul {
+.nav ul{
     width: 50%;
     float: left;
     text-align: right;
     padding-top: 1em;
 }
-
-.nav ul li {
+.nav ul li{
     display: inline-block;
     margin-left: 1em;
 }
-
-.nav ul a {
+.nav ul a{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #312a26;
+    color: #312A26;
     text-decoration: none;
 }
-
 /* (2) Banner area */
 .banner{
     background-image: url('../images/banner-bg.jpg');
@@ -73,36 +61,87 @@ p {
     width: 100%;
     height: 670px;
 }
-
-.banner-text {
+.banner-text{
     position: absolute;
     top: 50%;
     left: 7.5%;
     transform: translateY(-50%);
     width: 45%;
 }
-
-.banner-text h2 {
-    color: #c7a17a;
+.banner-text h2{
+    color: #C7A17A;
     font-size: 4em;
     text-transform: uppercase;
 }
-
-.banner-text h2 span {
-    color: #96746b;
+.banner-text h2 span{
+    color: #96746B;
 }
-
-.banner-text p {
+.banner-text p{
     color: #fff;
 }
-
-.banner a {
+.banner a{
     text-decoration: none;
     display: inline-block;
     padding: 1em;
-    background-color: #312a26;
-    color:#fff;
+    background-color: #312A26;
+    color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     margin-top: 1em;
+}
+
+
+/* (3) Ads area */
+
+.ads {
+    width: 85%;
+    margin: 4em auto;
+    overflow:  auto;
+
+}
+
+.ads-items{
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 3%;
+
+}
+
+.ads-item1 {
+    margin-right: 3%;
+    background-image: url('../images/ads-img1.jpg');
+}
+
+.ads-item2 {
+    background-image: url('../images/ads-img2.jpg');
+}
+
+.ads-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.ads-text h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.ads-text a {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 5px #312a26;
 }
